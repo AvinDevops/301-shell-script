@@ -7,3 +7,20 @@ then
 else
     echo "you are root user"
 fi
+
+dnf install mysql -y
+if [ $? -ne 0 ]
+then
+    echo "Installation of mysql is...FAILED"
+else
+    echo "Installation of mysql is....SUCCESS"
+fi
+
+dnf install git -y
+if [ $? -ne 0 ]
+then
+    echo "Installation of GIT is....FAILED"
+else
+    echo "Installation of GIT is....SUCCESS"
+fi
+echo "Scrip reached last line,COMPLETED"
