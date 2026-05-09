@@ -2,7 +2,7 @@
 
 FULLNAME=("Avinash" "Kumar" "Bandela")
 
-echo "first name is: $[0]"
-echo "middle name is: $[1]"
-echo "last name is: $[2]"
-echo "full name is: $[@]"
+echo "first name is: $FULLNAME[0]"
+echo "middle name is: $FULLNAME[1]"
+echo "last name is: $FULLNAME[2]"
+echo "full name is: $FULLNAME[@]"
