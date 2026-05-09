@@ -4,6 +4,7 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then
     echo "you are not root user, please access with root"
+    exit 0
 else
     echo "you are root user"
 fi
@@ -23,4 +24,4 @@ then
 else
     echo "Installation of GIT is....SUCCESS"
 fi
-echo "Scrip reached last line,COMPLETED"
+echo "Script reached last line,COMPLETED"
