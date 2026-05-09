@@ -12,10 +12,10 @@ N="\e[0m"
 
 if [ $USERID -ne 0 ]
 then
-    echo "you are not root user, please access with root access"
+    echo -e "$R you are not root user, please access with root access $N"
     exit 1
 else
-    echo "you are super user"
+    echo -e "$G you are super user $N"
 fi
 
 VALIDATE(){
