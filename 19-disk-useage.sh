@@ -15,3 +15,5 @@ do
 done <<< $DISK_USEAGE
 
 echo -e "Message is: $MESSAGE"
+
+echo "$MESSAGE" | mail -s "disk usegae" avinashbandela77@gmail.com
