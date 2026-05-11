@@ -1,6 +1,6 @@
 #!/bin/bash
 DISK_USEAGE=$(df -hT | grep xfs)
-DISK_THRESHOLD=10
+DISK_THRESHOLD=6
 
 
 while IFS= read -r line
@@ -10,6 +10,6 @@ do
    if [ $USEAGE -ge $DISK_THRESHOLD ]
    then
         # echo "Folder:$FOLDER usage:$USEAGE is greater than $DISK_THRESHOLD"
-        MESSAGE+="Folder:$FOLDER usage:$USEAGE is greater than $DISK_THRESHOLD"
+        MESSAGE="Folder:$FOLDER usage:$USEAGE is greater than $DISK_THRESHOLD"
    fi
 done <<< $DISK_USEAGE
