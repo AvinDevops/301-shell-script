@@ -10,5 +10,5 @@ do
    if [ $FOLDER -gt $DISK_THRESHOLD ]
    then
         echo "Folder:$FOLDER usage:$USEAGE is greater than $DISK_THRESHOLD"
-    fi
+   fi
 done <<< $DISK_USEAGE
