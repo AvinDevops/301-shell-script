@@ -14,7 +14,7 @@ else
     exit 1
 fi
 
-FILES=$(find /home/ec2-user/app_logs -name "*.log" -mtime +14)
+FILES=$(find /home/ec2-user/app_logs -name "*.log" -mtime +13)
 
 while IFS= read -r line
 do
