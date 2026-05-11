@@ -5,5 +5,6 @@ DISK_THRESHOLD=10
 
 while IFS= read -r line
 do
-    echo "$line"
+   USEAGE=$(echo $line | awk -F " " '{print $6F}' | cut -d "%" -f1)
+   FOLDER=$(echo $line | awk -F " " '{print $NF}')
 done <<< $DISK_USEAGE
