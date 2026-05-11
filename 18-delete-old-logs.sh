@@ -16,7 +16,7 @@ fi
 
 FILES=$(find /home/ec2-user/app_logs -name "*.log" -mtime +14)
 
-while IFS=read -r line
+while IFS= read -r line
 do
     echo "deleting file: $line"
 done <<<$FILES
