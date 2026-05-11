@@ -1,7 +1,7 @@
 #!/bin/bash
 DISK_USEAGE=$(df -hT | grep xfs)
 DISK_THRESHOLD=6
-MESSAGE=""
+# MESSAGE=""
 
 while IFS= read -r line
 do
@@ -14,4 +14,4 @@ do
    fi
 done <<< $DISK_USEAGE
 
-echo "Message is: $MESSAGE"
+echo -e "Message is: $MESSAGE"
